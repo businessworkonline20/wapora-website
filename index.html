@@ -672,7 +672,7 @@
                Setup (2 min): go to web3forms.com, enter your Gmail, copy the Access Key,
                and paste it into the value below. That's the only change needed. -->
           <form class="form-card" id="leadForm" autocomplete="on">
-            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+            <input type="hidden" name="access_key" value="8617cff5-76ed-4025-9a60-ac5ba4eff636">
             <input type="hidden" name="subject" value="New Wapora demo request">
             <input type="hidden" name="from_name" value="Wapora website">
             <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -769,7 +769,7 @@
     var st=document.getElementById('formStatus'),btn=lf.querySelector('button[type=submit]');
     var key=lf.querySelector('[name=access_key]').value;
     st.className='form-status';
-    if(key==='YOUR_WEB3FORMS_ACCESS_KEY'){st.textContent='Add your Web3Forms access key to enable the form.';st.classList.add('err');return;}
+    if(!key){st.textContent='Add your Web3Forms access key to enable the form.';st.classList.add('err');return;}
     btn.disabled=true;btn.textContent='Sending...';
     var data=Object.fromEntries(new FormData(lf));
     fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})
