@@ -174,8 +174,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .chip{font-size:.8rem;font-weight:600;font-family:var(--display);border:1px solid var(--line);color:var(--brand-d);background:#fff;padding:7px 13px;border-radius:999px;transition:background .15s,color .15s}
   .chip:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
   .float-stat{position:absolute;background:var(--paper);border:1px solid var(--line);box-shadow:0 18px 40px -18px rgba(10,58,40,.45);border-radius:16px;padding:13px 17px}
-  .fs-1{right:-18px;top:34%;animation:float 4s ease-in-out infinite}
-  .fs-2{left:-22px;bottom:46px;animation:float 4s ease-in-out infinite .8s}
+  .fs-1{right:28px;top:-26px;animation:float 4s ease-in-out infinite}
+  .fs-2{left:24px;bottom:-24px;animation:float 4s ease-in-out infinite .8s}
   .float-stat b{font-family:var(--display);font-size:1.3rem;display:block;letter-spacing:-.02em}
   .float-stat small{color:var(--muted);font-weight:600;font-size:.74rem}
   @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
@@ -352,6 +352,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .cards,.features,.aud{grid-template-columns:repeat(2,1fr)}
     .stats{grid-template-columns:repeat(2,1fr);gap:28px}
     .stat:nth-child(2){border-right:0}
+    .float-stat{display:none}
   }
   @media (max-width:860px){
     section{padding:76px 0}
